@@ -64,6 +64,16 @@
     width: 100%;
     text-align: center;
 }
+        
+    .logo {
+    font-size: 1.75rem;
+    font-weight: 800;
+    letter-spacing: -0.02em;
+    background: linear-gradient(135deg, #ffffff 0%, rgba(255, 255, 255, 0.8) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
 
 .settings-button:hover {
     transform: translateY(-2px);
@@ -77,8 +87,13 @@
     </style>
 </head>
 <body class="dark-mode">
-    <center class="header-content">
-        <h1>Links</h1>
+    <header>
+        <div class="header-content">
+            <div class="logo">Links</div>
+        </div>
+    </header>
+    <center>
+        <h1></h1>
         <a href="1.12.html">
  <button class="settings-button">Play 1.12</button>
         </a>    
@@ -86,7 +101,7 @@
             <button class="settings-button">Open Gn-Math</button>
         </a>
         <a href="packs.html">
-            <button style="border-radius: 25px; font-size: 20px; width: 200px; background-color: cadetblue;">WIP</button>
+            <button class="settings-button">WIP</button>
                    </a>    
         
 
