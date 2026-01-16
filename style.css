@@ -112,6 +112,17 @@ header {
   text-shadow: 0 0 25px rgba(255, 165, 0, 0.4);
 }
 
+.big-logo::after {
+  content: "";
+  display: block;
+  width: 80px;
+  height: 4px;
+  margin: 20px auto 0;
+  background: white;
+  border-radius: 2px;
+  opacity: 0.8;
+}
+
 .logo {
     font-size: 1.75rem;
     font-weight: 800;
