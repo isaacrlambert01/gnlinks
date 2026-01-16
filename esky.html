@@ -7,10 +7,12 @@
     <link rel="apple-touch-icon" href="/https://www.eskymofanclub.org/wp-content/uploads/Escanaba-512.png">
     <script>
      let allowLeave = false;
-     if (allowLeave) return; // skip warning
-        event.preventDefault();
-        event.returnValue = '';
-      });
+     window.addEventListener('beforeunload', function (event) {
+         if (allowLeave) return; // skip warning
+     
+         event.preventDefault();
+         event.returnValue = '';
+     });
      document.getElementById('home').addEventListener('click', () => {
         allowLeave = true;
      });
