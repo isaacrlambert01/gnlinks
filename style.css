@@ -641,3 +641,11 @@ footer {
     transform: translateY(0);
     box-shadow: var(--shadow-sm);
 }
+
+.button-container {
+    display: flex;          /* side by side */
+    flex-wrap: wrap;        /* wrap to next line when space runs out */
+    gap: 20px;              /* space between buttons */
+    justify-content: center; /* center all buttons horizontally */
+    margin: 20px 0;          /* spacing around the container */
+}
