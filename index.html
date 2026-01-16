@@ -29,5 +29,22 @@
             <button class="settings-button">Minecraft 1.12</button>
         </a>
     </center>
+
+<script>
+    const settings = document.getElementById('suggestions');
+    settings.addEventListener('click', () => {
+        document.getElementById('popupTitle').textContent = "Suggestions?";
+        const popupBody = document.getElementById('popupBody');
+        popupBody.innerHTML = 
+            <button class="settings-button" onclick="darkMode()">Toggle Dark Mode</button>
+            <br><br>
+            <button class="settings-button" onclick="tabCloak()">Tab Cloak</button>
+            <br>
+            `;
+            popupBody.contentEditable = false;
+            document.getElementById('popupOverlay').style.display = "flex";
+});
+</script>
+    
 </body>
 </html>
