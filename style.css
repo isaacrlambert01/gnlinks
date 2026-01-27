@@ -666,5 +666,5 @@ footer {
     background: none;     /* Removes background color */
     border: none;         /* Removes the border */
     color: transparent;   /* Makes any text inside invisible */
-    cursor: pointer;      /* Keeps the hand icon cursor on hover, indicating interactivity */
+    cursor: default;      /* Keeps the hand icon cursor on hover, indicating interactivity */
 }
